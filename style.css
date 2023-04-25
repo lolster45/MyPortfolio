@@ -239,85 +239,79 @@ nav > ul li a:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  width: 100%;
 }
-#projects .prj-cont #third-Img > img {
-  width: 450px;
+#projects .prj-cont picture {
+  position: relative;
+  height: 300px;
+  width: 430px;
 }
-#projects .img {
-  height: auto;
-  width: 360px;
+#projects .prj-cont picture .img {
+  height: 300px;
+  width: 100%;
 }
-
-.project-info {
+#projects .prj-cont .project-info {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--light-gray);
-  transform: translate(-45px, 35px);
-  position: relative;
-  text-align: end;
-  font-size: 17px;
-  margin-left: 10px;
+  align-items: end;
   height: 386px;
   width: 300px;
-  min-height: 80px;
-}
-.project-info:nth-child(3) {
-  transform: translateY(20px);
-}
-.project-info h2 {
+  margin-left: 10px;
   padding: 20px;
-  color: white;
+  text-align: end;
+  font-size: 17px;
+  background-color: var(--light-gray);
+}
+#projects .prj-cont .project-info h2 {
   font-size: 30px;
+  margin-bottom: 17px;
+  color: white;
 }
-.project-info p {
-  margin-top: 0px;
-  padding: 20px;
+#projects .prj-cont .project-info p {
   color: var(--text-color);
   background-color: var(--light-gray);
 }
-.project-info span {
+#projects .prj-cont .project-info span {
   position: absolute;
   bottom: 20px;
   right: 0px;
+  font-size: 8px;
+  margin-top: 10px;
+  padding-right: 20px;
   color: var(--text-color);
-  font-size: 10px;
-  margin-top: 10px;
-  padding-right: 20px;
 }
-
-.open-live {
-  position: relative;
-  padding-right: 20px;
+#projects .prj-cont .project-info button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
   margin-top: 10px;
-  color: var(--red);
-}
-
-button {
-  font-weight: 700;
-  margin-right: 20px;
   height: 40px;
   width: 100px;
   color: var(--red);
   background-color: var(--main-bg-color);
-  border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
-button:hover {
-  background-color: var(--red);
+#projects .prj-cont .project-info button:hover {
   color: var(--main-bg-color);
+  background-color: var(--red);
+}
+#projects .prj-cont .project-info .open-live {
+  position: relative;
+  margin-top: 10px;
+  color: var(--red);
 }
 
 #projects-grid {
+  cursor: pointer;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 20px;
-  background-color: var(--main-bg-color);
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 250px;
-  cursor: pointer;
+  background-color: var(--main-bg-color);
 }
 #projects-grid #grid-title {
   position: absolute;
@@ -411,7 +405,6 @@ footer #connect-logos > a:hover {
 
 .slide-in-proj {
   transform: translate(0);
-  margin: -30px;
   opacity: 1;
 }
 
@@ -452,16 +445,27 @@ footer #connect-logos > a:hover {
   #projects .prj-cont picture {
     margin: 0 auto;
   }
-  #projects .prj-cont picture a > img {
+  #projects .prj-cont picture > img {
     height: auto;
-    width: 100%;
-  }
-  #projects .prj-cont #third-Img > img {
     width: 100%;
   }
   #projects .prj-cont .project-info {
     margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
     width: 100%;
+  }
+  #projects .prj-cont .project-info a:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  #projects .prj-cont .project-info .open-live {
+    width: 93%;
+    padding-bottom: 10px;
+  }
+  #projects .prj-cont .project-info span {
+    padding-right: 23px;
+    bottom: 10px;
   }
   #projects-grid {
     grid-template-columns: repeat(2, auto);
@@ -509,9 +513,6 @@ footer #connect-logos > a:hover {
   }
   header #ham-menu {
     display: block;
-  }
-  .project-info {
-    transform: translateY(-40px);
   }
   #projects-grid {
     grid-template-columns: repeat(1, auto);
