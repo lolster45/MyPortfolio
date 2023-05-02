@@ -1,6 +1,7 @@
 const slideInItemsLeft = document.querySelectorAll(".left");
 const slideInItemsRight = document.querySelectorAll(".right");
-const navMenu = document.querySelector("nav");
+const navMenu = document.getElementById("nav");
+const header = document.querySelector("header")
 const hamMenuIcon = document.getElementById("ham-menu")
 const navMobileRemove = document.querySelectorAll("nav > ul > li");
 
@@ -20,6 +21,7 @@ navMobileRemove.forEach(li => {
 
 hamMenuIcon.addEventListener("click", () => {
     navMenu.classList.toggle("active")
+    header.classList.toggle("active")
 })
 
 const options = {

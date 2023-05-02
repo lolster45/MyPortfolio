@@ -502,41 +502,58 @@ footer {
     }    
 }
 @media only screen and (max-width: 705px) {
-    #intro {
-        h1 {
-            font-size: 30px;
+  
+    header {
+        position: relative;
+        z-index: 0;
+        padding-right: 20px;
+        &.active {
+            z-index: 6;
+        }
+        #ham-menu {
+            display: block;
+            font-size: 2rem;
+        }
+        nav {
+            position: absolute;
+            top: 50px;
+            left: -20px;
+            height: 50vh;
+            width: 100vw;
+            background-color: var(--light-gray);
+            opacity: 0;
+            transition: all 0.55s cubic-bezier(0.19, 0.21, 0.48, 1.01);
+            &.active {
+                opacity: 1;
+                top: 50px;
+                left: 0;
+                right: 0;
+            }
+            ul {
+                flex-direction: column;
+                li {
+                    text-align: center;
+                    margin-top: 40px;
+                    margin-right: 0;
+                    font-size: 30px;
+                }
+            }
         }
     }
-    header {
-        padding-right: 20px;
-    }
-    nav {
-        position: absolute;
-        background-color: var(--light-gray);
-        top: 0;
-        left: -1000px;
-        height: 100vh;
-        ul {
-            flex-direction: column;
-            li {
-                text-align: center;
-                margin-top: 40px;
-                margin-right: 0;
+
+    main {
+        position: relative;
+        z-index: 5;
+        margin-top: 0;
+        padding-top: 120px;
+        #intro {
+          
+            h1 {
                 font-size: 30px;
             }
         }
-        &.active {
-            top: 50px;
-            left: 0;
-            right: 0;
-            height: 50vh;
-        }
     }
-    header {
-        #ham-menu {
-            display: block;
-        }
-    }
+
     .project-info {
         //transform: translateY(-40px);
     }
