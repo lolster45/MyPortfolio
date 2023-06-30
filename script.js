@@ -7,9 +7,9 @@ const navMobileRemove = document.querySelectorAll("nav > ul > li");
 
 //once the page loads, it starts the fading in animation of the main h1 text...
 window.addEventListener("load", (event) => {
-    document.getElementById("introP").classList.add("animated", "animatedFadeInUp", "fadeInUp")
-    document.getElementById("introP2").classList.add("animated", "animatedFadeInUp", "fadeInUp")
-    document.getElementById("introP3").classList.add("animated", "animatedFadeInUp", "fadeInUp")
+    document.getElementById("intro1").classList.add("animated", "animatedFadeInUp", "fadeInUp")
+    document.getElementById("intro2").classList.add("animated", "animatedFadeInUp", "fadeInUp")
+    document.getElementById("intro3").classList.add("animated", "animatedFadeInUp", "fadeInUp")
 })
 
 //Removes mobile nav when you click on one of the nav options...

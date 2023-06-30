@@ -14,7 +14,6 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/2b8f30e114.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
@@ -36,32 +35,37 @@
             <a href="mailto:oscarneutron3@gmail.com" target="_blank">oscarneutron3@gmail.com</a>
         </aside>
         <aside id="decor-aside">
-            <div id="decoration">
+            <div class="decorations">
                 <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
             </div>
-            <div id="decoration">
+            <div class="decorations">
                 <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
             </div>
-            <div id="decoration">
+            <div class="decorations">
                 <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
             </div>
-            <div id="decoration">
+            <div class="decorations">
                 <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
             </div>
-            <div id="decoration">
+            <div class="decorations">
                 <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
             </div>
         </aside>
         <section id="intro">
-            <p id="introP">Hi, my name is</p>
-            <h1 id="introP2">Oscar Reyes.</h1>
-            <h2 id="introP3">I am a Front End Developer</h2>
+            <p id="intro1">Hi, my name is</p>
+            <h1 id="intro2">Oscar Reyes.</h1>
+            <h2 id="intro3">I am a Front End Developer</h2>
         </section>
         <section id="about-me">
             <article class="left">
                 <h2>01. About Me!---------------</h2>
-                <p>Hi, my name is Oscar Reyes and I am an aspiring Front End Web Developer. I first started Web Development in High School, though never persued it until 2022. It has been close to 11 months since I started and have learned a tremendous amount of interesting things for Front-End.</p><br>
-                <p>I have built plenty of projects and although I dont have real world experience, I am willing to show just how hard I am willing to go in pursing my passion. So far it has been a fun journey(minus the frustration).</p>
+                <p>
+                    Hi, my name is Oscar Reyes and I am an aspiring Front End Web Developer. I first started Web Development in High School, though never persued it until 2022. It has been close to 11 months since I started and have learned a tremendous amount of interesting things for Front-End.
+                </p>
+                <br>
+                <p>
+                    I have built plenty of projects and although I dont have real world experience, I am willing to show just how hard I am willing to go in pursing my passion. So far it has been a fun journey(minus the frustration).
+                </p>
                 <div id="skills-list">
                     <h3>Skills:</h3>
                     <ul>
@@ -76,7 +80,11 @@
                     </ul>
                 </div>
             </article>
-            <img class="right" src="https://media.licdn.com/dms/image/D5603AQGMy0b1soLnQA/profile-displayphoto-shrink_800_800/0/1675240151524?e=1688601600&v=beta&t=DjinKkzX_Qw9ks-uKdRXUE_KbmGbN_T1zZbxjCNLjvE" alt="my profile picture">
+            <img 
+                class="right" 
+                src="https://media.licdn.com/dms/image/D5603AQGMy0b1soLnQA/profile-displayphoto-shrink_800_800/0/1675240151524?e=1688601600&v=beta&t=DjinKkzX_Qw9ks-uKdRXUE_KbmGbN_T1zZbxjCNLjvE" 
+                alt="my profile picture"
+            >
         </section>
         <section id="projects">
             <h3 id="title">
@@ -105,11 +113,6 @@
             </article>
             <article class="prj-cont">
                 <picture class="left-proj">
-                    <!-- <img 
-                        class="img" 
-                        src="./images/Neanime(discovery).png" 
-                        alt="image of top anime project"
-                    > -->
                     <a href="" id="third-Img">
                         <img id="anime-Img" class="img" src="./images/Neanime(discovery).png" 
                         alt="image of top anime project">
@@ -154,20 +157,20 @@
             <article class="prj-cont">
                 <picture class="left-proj">
                     <a href="" id="third-Img">
-                        <img id="anime-Img" class="img" src="./images/anime(pic).jpg" alt="image of top anime project">
+                        <img id="anime-Img" class="img" src="./images/Shopingify.png" alt="image of top anime project">
                     </a>
                 </picture>
                 <div class="project-info right-proj">
-                    <h2>Anime</h2>
-                    <p>I used the Jikan animeList API which shows you the current trending/popular anime. It also has Google login with exclusive features only available to users who are logged in. Plus built in search functionality.</p>
-                    <a href="https://github.com/lolster45/MyAnimeList" target="_blank">
+                    <h2>Shopping List</h2>
+                    <p>Users are able to create a shopping list with selected items. Plus are able to add items to the available items with live search functionality. Plus a history of shopping list's created with a statistics page of how many you have created in a year/month.</p>
+                    <a href="https://github.com/lolster45/Shopping-list" target="_blank">
                         <button class="btn-proj">Git-Hub</button>
                     </a>
-                    <a href="https://lolster45.github.io/MyAnimeList/" class="open-live" target="_blank">
+                    <a href="https://shopping-list-tawny-seven.vercel.app/" class="open-live" target="_blank">
                         <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                     <span>
-                        React, HTML, SCSS, JavaScript, FireBase
+                        React, HTML, SCSS, TypeScript
                     </span>
                 </div>
             </article>
@@ -255,33 +258,38 @@
         <section id="projects-grid">
             <h2 id="grid-title">03. More Work--------------</h2>
             <div class="left" onclick="window.open('https://github.com/lolster45/Color-Scheme-Maker', '_blank'); return false;">
-                <h2><a href=>Color Scheme</a></h2>
+                <h2>Color Scheme</h2>
                 <p>I used a color scheme API I found on Git-Hub.</p>
                 <span>HTML, CSS, JavaScript</span>
             </div>
             <div class="right" onclick="window.open('https://github.com/lolster45/Tic-Tac-Toe', '_blank'); return false;">
-                <h2><a href="">Tic Tac Toe</a></h2>
+                <h2>Tic Tac Toe</h2>
                 <p>A simple tic tac toe game to play with against your friends. It can keep score</p>
                 <span>HTML, CSS, JavaScript</span>
             </div>
             <div class="right" onclick="window.open('https://github.com/lolster45/Anime-quote-generator', '_blank'); return false;">
-                <h2><a href="">Quote Generator</a></h2>
+                <h2>Quote Generator</h2>
                 <p>I used an anime quote API found on Git-Hub to generate random quotes as the tile states. Some are fun quotes while others....</p>
                 <span>HTML, CSS, JavaScript</span>
             </div>
             <div class="left" onclick="window.open('https://github.com/lolster45/Password-generator', '_blank'); return false;">
-                <h2><a href="">Password Generator</a></h2>
+                <h2>Password Generator</h2>
                 <p>If you ever dont feel creative enough to make a password, well you have come to right place...</p>
                 <span>HTML, CSS, JavaScript</span>
             </div>
             <div class="left" onclick="window.open('', '_blank'); return false;">
-                <h2><a href="">To-do List</a></h2>
+                <h2>To-do List</h2>
                 <p>A simple to-do list made with React. You can delete and add bullet points throught the day to fit your needs.</p>
                 <span>React, HTML, CSS, JavaScript</span>
             </div>
+            <div class="right" onclick="window.open('', '_blank'); return false;">
+                <h2>MyAnimeList</h2>
+                <p>I used the Jikan animeList API which shows you the current trending/popular anime. It also has Google login with exclusive features only available to users who are logged in. Plus built in search functionality.</p>
+                <span>React, HTML, CSS, JavaScript, Firebase</span>
+            </div>
         </section>
     </main>
-    <footer id="connect">
+    <footer>
         Created by Me.
         <div id="connect-logos">
             <a href="https://www.linkedin.com/in/oscar-reyes-denova-34b4a81a2/" target="_blank">
