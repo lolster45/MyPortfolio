@@ -7,12 +7,12 @@
     box-sizing: inherit;
 }
 :root {
-    --main-bg-color: #1C1C21;
-    --main-bg-transparent: #1c1c21fa;
-    --light-gray: #2F2F37;
-    --red: #CF2626;
-    --text-color: #8892b0;
-    --light-white: #dddde5;
+    --main-bg-color: #eeeef1;
+    --main-bg-transparent: #eeeef1;
+    --light-gray: #ff9f1c;
+    --red: black;
+    --text-color: #000000;
+    --header-description: #474645;
     --font-mono: monospace;
     --slide-in: all 350ms ease;
 }
@@ -171,13 +171,13 @@ main {
         #intro2 {
             animation-delay: 0.3s;
             margin-bottom: 10px;
-            color: white;
+            color: black;
         }
         #intro3 {
             animation-delay: 0.6s;
             margin-bottom: 10px;
             font-size: 45px;
-            color: var(--light-white);
+            color: var(--header-description);
         }
     }
     #about-me {
